@@ -6,7 +6,7 @@
 
 A reverse-mode automatic-differentiation engine and a small neural network — written from scratch in ~200 lines of header-only C++17, no dependencies. It's the machinery behind PyTorch's `loss.backward()`, reduced to its essence so you can read the whole thing.
 
-Point of the project: *understand* autograd by building it. A `Value` is a node in a computation graph; every `+`, `*`, `tanh` records how to send gradients back to its inputs; `backward()` walks the graph in reverse-topological order and fills in every derivative. On top of that sits an MLP that learns XOR with plain SGD.
+A `Value` is a node in a computation graph; every `+`, `*`, `tanh` records how to send gradients back to its inputs; `backward()` walks the graph in reverse-topological order and fills in every derivative. On top of that sits an MLP that learns XOR with plain SGD.
 
 ## Build & run
 
