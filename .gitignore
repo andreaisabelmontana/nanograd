@@ -3,5 +3,5 @@
 *.obj
 *.exe
 *.out
-nanograd
-nanograd_tests
+/nanograd
+/nanograd_tests
